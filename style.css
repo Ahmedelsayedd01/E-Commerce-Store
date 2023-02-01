@@ -435,8 +435,13 @@ form.search button:hover{
   z-index: 1000;
   transform: translateX(-100%);
   visibility: hidden;
-  transition: transform .4s visibility .4s;
-  will-change: transform visibility;
+  transition: transform .4s, visibility .4s;
+  will-change: transform, visibility;
+}
+.showmenu .site-off{
+  transform: translateX(0);
+  visibility: visible;
+  transform: transform .4s 0s, visibility 0s 0s;
 }
 .off-canvas{
   width: var(--percent100);
