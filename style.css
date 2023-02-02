@@ -334,8 +334,8 @@ nav .fly-item {
 }
 .mega .flexcol {
   flex: 1;
-  min-width: 100px;
-  padding-right: 2.5em;
+  min-width: 180px;
+  /* padding-right: 2.5em; */
   margin-bottom: 1.5em;
   z-index: 1;
 }
@@ -578,6 +578,9 @@ form.search button:hover{
   text-transform: uppercase;
   letter-spacing: -1px;
 }
+.swiper-pagination .swiper-pagination-bullet-active{
+  background-color: var(--secondary-dark-color);
+}
 
 
 
@@ -741,6 +744,10 @@ form.search button:hover{
   }
   .dpt-menu .homekit .mega{
     background: url(assets/menu/menu_bg4.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+
   }
 
   .dpt-menu .has-child > :where(ul,.mega)::before{
