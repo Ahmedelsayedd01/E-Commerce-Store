@@ -590,10 +590,22 @@ form.search button:hover{
   background-color: var(--secondary-dark-color);
 }
 
-
-
-
 /* Slider----------- */
+
+/* Brands */
+.brands .wrapper{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em 0;
+}
+.brands .item img{
+  opacity: .25;
+  transition: opacity 0.3s;
+}
+.brands .item a:hover img{
+  opacity: 1;
+}
+/* Brands----------- */
 
 
 
