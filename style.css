@@ -902,20 +902,54 @@ justify-content: space-between;
 .banner .primary-button{
   z-index: 3;
 }
-
-
-/* Banner------- */
-
+.banners .product-categories .item{
+  display: flex;
+  padding: 1.5em;
+}
+.banners .product-categories .image{
+  max-width: 150px;
+}
+.mini-links ul{
+  font-size: var(--font-small);
+  color: var(--light-text-color);
+  margin-top: 1em;
+}
+.banner .second-links{
+  margin-top: 2em;
+}
+.mini-links li a:hover{
+  text-decoration: underline;
+}
+/* Banners------- */
 
 /* Products Main----- */
 
-
 /* Header Main-----------*/
-
-
 
 /* Header -----------*/
 
+/* Footer */
+.newsletter{
+  padding: 2.5em 0;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.newsletter h3{
+  font-size: 1.5em;
+}
+.newsletter p{
+  font-weight: var(--fw3);
+  color: var(--border-color);
+  margin: 0.5em 0 1.5em;
+}
+.newsletter p strong{
+  color: var(--primary-color);
+}
+.newsletter form{
+  max-width: 500px;
+  width: var(--percent100);
+}
+/* Footer------ */
 
 /* Media query */
 
@@ -1124,7 +1158,7 @@ flex: 0 0 50%;
   margin-left: auto;
 }
 /* Products */
-.trending .products{
+.trending .products, .product-categories .row{
   flex: 0 0 33.3333%;
 }
 .products.big .media{
@@ -1136,8 +1170,15 @@ flex: 0 0 50%;
   flex: 0 0 25%;
 }
 /* Products part2-------- */
-
 /* Products-------- */
+
+/* Footer */
+.newsletter .box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Footer----- */
 }
 /* Responsive lapTop----- */
 
