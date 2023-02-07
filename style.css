@@ -929,6 +929,8 @@ justify-content: space-between;
 /* Header -----------*/
 
 /* Footer */
+
+/* newsletter */
 .newsletter{
   padding: 2.5em 0;
   background-color: var(--dark-color);
@@ -949,6 +951,15 @@ justify-content: space-between;
   max-width: 500px;
   width: var(--percent100);
 }
+/* newsletter---- */
+
+/* widgets */
+.widgets{
+  padding: 3.5em 2.5em;
+  background-color: var(--light-bg-color);
+}
+/* widgets---- */
+
 /* Footer------ */
 
 /* Media query */
