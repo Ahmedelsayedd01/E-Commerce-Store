@@ -969,7 +969,7 @@ flex: 0 0 50%;
   .products .price .current{
     font-size: 1.25em;
   }
-  .products.mini, .banner .row{
+  .products.mini, .banner .row, .widgets .row{
     flex: 0 0 50%;
   }
   .products.main .item{
@@ -1166,7 +1166,7 @@ flex: 0 0 50%;
 }
 
 /* Products part2 */
-.products.main .item{
+.products.main .item, .widgets .row{
   flex: 0 0 25%;
 }
 /* Products part2-------- */
