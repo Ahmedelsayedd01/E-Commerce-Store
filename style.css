@@ -1085,8 +1085,13 @@ justify-content: space-between;
 
 /* Page Single */
 
-.page-home .dpt-cart .dpt-trigger{
+.page-home .dpt-cart .dpt-trigger,
+.dpt-trigger .ri-close-line,
+.showdpt .dpt-trigger .ri-menu-3-line{
   display: none;
+}
+.showdpt .dpt-trigger .ri-close-line{
+display: block;
 }
 /* Page Single----- */
 
