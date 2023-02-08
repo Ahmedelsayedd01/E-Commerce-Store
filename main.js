@@ -61,3 +61,11 @@ searchButton.addEventListener("click", function () {
 tClose.addEventListener("click", function () {
   showClass.classList.remove("showsearch");
 });
+
+// Show dpt menu
+const dptButton = document.querySelector(".dpt-cart .dpt-trigger"),
+  dptClass = document.querySelector(".site");
+dptButton.addEventListener("click", function () {
+  console.log('Ahmed');
+  dptClass.classList.toggle("showdpt");
+});
