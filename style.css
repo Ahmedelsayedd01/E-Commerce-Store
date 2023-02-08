@@ -1081,6 +1081,18 @@ justify-content: space-between;
 }
 /* Overlay----- */
 
+
+
+/* Page Single */
+
+.page-home .dpt-cart .dpt-trigger{
+  display: none;
+}
+/* Page Single----- */
+
+
+
+
 /* Media query */
 
 /* Responsive mobile */
