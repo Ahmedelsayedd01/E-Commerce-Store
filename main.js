@@ -66,6 +66,31 @@ tClose.addEventListener("click", function () {
 const dptButton = document.querySelector(".dpt-cart .dpt-trigger"),
   dptClass = document.querySelector(".site");
 dptButton.addEventListener("click", function () {
-  console.log('Ahmed');
+  console.log("Ahmed");
   dptClass.classList.toggle("showdpt");
+});
+
+// Product Image Slider
+let ProductThumb = new Swiper(".small-image", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  breakpoints: {
+    481: {
+      spaceBetween: 32,
+    },
+  },
+});
+let productBig = new Swiper(".big-image", {
+  loop: true,
+  autoHeight: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-perv",
+  },
+  thumbs: {
+    swiper: ProductThumb,
+  },
 });
