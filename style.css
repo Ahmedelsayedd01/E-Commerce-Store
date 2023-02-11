@@ -1169,6 +1169,23 @@ display: block;
 }
 /* Products details-------- */
 
+
+/* Products description */
+.products.one .available{
+  font-size: var(--font-small);
+  font-weight: var(--fw5);
+  padding: 0.5em;
+  margin-right: 1em;
+  border-radius: 3px;
+  color: #10ac84;
+  background-color: var(--light-bg-color);
+}
+
+
+/* Products description---------- */
+
+
+
 /* Page Single----- */
 
 
