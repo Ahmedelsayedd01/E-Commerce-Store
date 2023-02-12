@@ -1305,6 +1305,27 @@ background-color: #1dd1a1;
   position: absolute;
   left: 0;
 }
+.products .collapse .content{
+  margin: 0 0 1.5em 2em;
+  font-size: var(--font-small);
+}
+.products .collapse .content li span:first-child{
+  min-width: 100px;
+  display: inline-flex;
+  font-weight: var(--fw7);
+  text-transform: uppercase;
+}
+.products .collapse table{
+  line-height: 3em;
+}
+.products .collapse table thead th{
+  vertical-align: bottom;
+  border-bottom: 2px solid var(--dark-color);
+}
+.products .collapse table :where(th, td){
+  border-bottom: 1px solid var(--border-color);
+  padding-left: 2em;
+}
 
 /* Product Review------ */
 
