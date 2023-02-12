@@ -1290,9 +1290,23 @@ background-color: #1dd1a1;
   margin: 1em 2em 1em 0;
   transition: var(--trans-color);
 }
-
 /* Products description---------- */
 
+/* Product Review */
+.products .collapse .has-child{
+  position: relative;
+  font-weight: var(--fw7);
+  text-transform: uppercase;
+  padding: 1em 1.25em;
+  border-top: 1px solid var(--border-color);
+}
+.products .collapse .has-child > a::before{
+  content: "+";
+  position: absolute;
+  left: 0;
+}
+
+/* Product Review------ */
 
 
 /* Page Single----- */
