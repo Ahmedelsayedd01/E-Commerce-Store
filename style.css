@@ -1293,12 +1293,14 @@ background-color: #1dd1a1;
 /* Products description---------- */
 
 /* Product Review */
-.products .collapse .has-child{
+.products .collapse .has-child > a{
   position: relative;
   font-weight: var(--fw7);
   text-transform: uppercase;
   padding: 1em 1.25em;
   border-top: 1px solid var(--border-color);
+  gap: 1em;
+  align-items: flex-start;
 }
 .products .collapse .has-child > a::before{
   content: "+";
@@ -1370,7 +1372,31 @@ background-color: #1dd1a1;
   top: 10px;
   right: 13px;
   transform: rotate(22deg);
-  background-color: var(--light-text-color);
+  background-color: var(--light-bg-color);
+}
+.products .review-block-body .item{
+  /* gap: 1em; */
+  /* padding-bottom: 2.5em; */
+  margin-top: 2em;
+}
+.products .review-block-body .item .review-form :where(.person, .mini-text){
+  margin: 0;
+  padding: 0;
+}
+.products .review-block-body :where(.person, .review-title){
+  font-weight: var(--fw7);
+  text-transform: uppercase;
+}
+.products .review-block-body :where(.review-title, .view-all){
+  font-size: 1.25em;
+  justify-content: end;
+}
+.products .review-block-body .review-text{
+  font-weight:var(--fw5);
+  text-transform:capitalize ;
+}
+.products .review-block-body .item:not(:last-child){
+  border-bottom: 1px solid var(--border-color);
 }
 /* Product Review Form------ */
 
