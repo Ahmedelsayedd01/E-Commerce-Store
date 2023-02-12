@@ -1326,6 +1326,16 @@ background-color: #1dd1a1;
   border-bottom: 1px solid var(--border-color);
   padding-left: 2em;
 }
+.products .collapse .content{
+  display: none;
+}
+.products .collapse .expand .content{
+  display: flex;
+}
+.products .collapse .expand > a::before{
+  content: "-";
+}
+
 
 /* Product Review------ */
 
