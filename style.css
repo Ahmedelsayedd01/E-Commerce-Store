@@ -1489,6 +1489,15 @@ form label{
 /* Page Single Special Offer------ */
 
 /* Page Category */
+.single-category .holder{
+  display: flex;
+  flex-direction: column;
+}
+.single-category .sidebar,
+.single-category .section{
+  flex: 1 0 100%;
+}
+/* Sidebar Products filter */
 .filter-block{
   margin-bottom: 1em;
   padding-bottom: 1em;
@@ -1574,8 +1583,7 @@ input[type="range"]::-webkit-slider-thumb{
   color: var(--light-text-color);
   margin-top: 0.5em;
 }
-
-
+/* Sidebar Products filter------- */
 /* Page Category------- */
 
 
@@ -1841,6 +1849,15 @@ flex: 0 0 50%;
 }
 /* Page Single------ */
 
+/* page category */
+.single-category .holder{
+  flex-direction: row;
+}
+.single-category .sidebar{
+  flex: 1 0 25%;
+}
+
+/* page category----- */
 
 }
 /* Responsive lapTop----- */
