@@ -1638,6 +1638,25 @@ input[type="range"]::-webkit-slider-thumb{
 .load-more{
   margin: 2em 0 4em;
 }
+.filter{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 2em;
+  max-width: 400px;
+  width: 90%;
+  background-color: var(--white-color);
+  overflow: auto;
+  z-index: 1000;
+  box-shadow: rgb(0,0,0 / 30%) 0 10px 50px;
+  visibility: hidden;
+  opacity: 0;
+}
+.filter.show{
+  visibility: visible;
+  opacity: 1;
+}
 
 /* Page Category Products-block------ */
 
@@ -1918,6 +1937,16 @@ flex: 0 0 50%;
 }
 .single-category .sidebar .filter{
   padding-right: 1.5em;
+  position: sticky;
+  top: 2em;
+  box-shadow: none;
+  width: var(--percent100);
+  z-index: initial;
+  visibility: visible;
+  opacity: 1;
+}
+.single-category .products.main .item{
+  flex: 0 0 33.3333%;
 }
 
 /* page category----- */
