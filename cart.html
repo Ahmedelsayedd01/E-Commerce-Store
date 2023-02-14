@@ -755,7 +755,112 @@
                     </div>
                   </form>
                   <div class="cart-summary styled">
-                    
+                    <div class="item">
+                      <div class="coupon">
+                        <input type="text" placeholder="Enter coupon" />
+                        <button>Apply</button>
+                      </div>
+                      <div class="shipping-rate collapse">
+                        <div class="has-child expand">
+                          <a href="#" class="icon-small"
+                            >Estimate Shipping and Tax</a
+                          >
+                          <div class="content">
+                            <div class="countries">
+                              <form action="">
+                                <label for="country">Country</label>
+                                <select name="" id="">
+                                  <option value=""></option>
+                                  <option value="1">Afganistan</option>
+                                  <option value="2">Aland Islan</option>
+                                  <option value="3">Albania</option>
+                                  <option value="4" selected="selected">
+                                    United States
+                                  </option>
+                                  <option value="5">Others</option>
+                                </select>
+                              </form>
+                            </div>
+                            <div class="states">
+                              <form action="">
+                                <label for="states">State/Province</label>
+                                <select name="" id="states">
+                                  <option value="">
+                                    Select a region, state or Province
+                                  </option>
+                                  <option value="1">Alabama</option>
+                                  <option value="2">Alaska</option>
+                                  <option value="3">American Samoa</option>
+                                  <option value="4">Arizona</option>
+                                  <option value="5">Arkansas</option>
+                                  <option value="6">Others</option>
+                                </select>
+                              </form>
+                            </div>
+                            <div class="postal-code">
+                              <form action="">
+                                <label for="postal">Zip/Postal Code</label>
+                                <input
+                                  type="number"
+                                  name="postal"
+                                  id="postal"
+                                />
+                              </form>
+                            </div>
+                            <div class="rate-options variant">
+                              <form action="">
+                                <p>
+                                  <span>Flat: $10.00</span>
+                                  <input
+                                    type="radio"
+                                    name="rate-options"
+                                    id="flat"
+                                    checked
+                                  />
+                                  <label for="flat" class="circle"></label>
+                                </p>
+                                <p>
+                                  <span>Best: $0.00</span>
+                                  <input
+                                    type="radio"
+                                    name="rate-options"
+                                    id="best"
+                                  />
+                                  <label for="best" class="circle"></label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-total">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <th>Subtotal</th>
+                              <td>$2155.95</td>
+                            </tr>
+                            <tr>
+                              <th>Discount</th>
+                              <td>-$100.00</td>
+                            </tr>
+                            <tr>
+                              <th>
+                                Shipping <span class="mini-text">(Flat)</span>
+                              </th>
+                              <td>$10.00</td>
+                            </tr>
+                            <tr class="grand-total">
+                              <th>Total</th>
+                              <td><strong>$2.65.95</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <a href="/checkout" class="secondary-button"
+                          >Checkout</a
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -969,26 +1074,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
 
     <script src="main.js"></script>
-
-    <script>
-      const FtoShow = ".filter";
-      const Fpopup = document.querySelector(FtoShow);
-      const Ftrigger = document.querySelector(".filter-trigger");
-
-      Ftrigger.addEventListener("click", () => {
-        setTimeout(() => {
-          if (!Fpopup.classList.contains("show")) {
-            Fpopup.classList.add("show");
-          }
-        }, 250);
-      });
-      // Auto Close by Click outside .filter
-      document.addEventListener("click", (e) => {
-        const isClosest = e.target.closest(FtoShow);
-        if (!isClosest && Fpopup.classList.contains("show")) {
-          Fpopup.classList.remove("show");
-        }
-      });
-    </script>
   </body>
 </html>
