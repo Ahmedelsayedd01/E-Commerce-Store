@@ -1686,14 +1686,14 @@ input[type="range"]::-webkit-slider-thumb{
   width: var(--percent100);
   height: var(--percent100);
   touch-action: auto;
-  padding: 1.5em;
+  padding: 0.7em 1.5em;
 }
 .mini-cart .cart-head{
   font-size: 1.5em;
   font-weight: var(--fw5);
   color: var(--light-text-color);
-  padding-bottom: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
+  padding-bottom: .4em;
   border-bottom: 1px solid var(--border-color);
 }
 .mini-cart .cart-body{
@@ -1734,6 +1734,15 @@ input[type="range"]::-webkit-slider-thumb{
   width: var(--percent100);
   text-align: center;
   margin-bottom: 1em;
+}
+.mini-cart.show{
+ visibility: visible;
+ opacity: 1;
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ max-width: 400px;
+ width: 900%;
 }
 
 /* Page Category Products-Cart------ */
