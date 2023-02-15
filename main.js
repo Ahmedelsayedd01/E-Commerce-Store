@@ -126,3 +126,20 @@ document.addEventListener("click", (e) => {
     divPopup.classList.remove("show");
   }
 });
+
+// Back to top
+const backtotop = document.querySelector(".backtotop");
+
+window.addEventListener("scroll", checkHeight);
+function checkHeight() {
+  if (window.scrollY > 200) {
+    backtotop.style.display = "flex";
+  } else {
+    backtotop.style.display = "none";
+  }
+}
+console.log(window.scrollY);
+
+backtotop.addEventListener("click", () => {
+  window.screenTop(0, 0);
+});

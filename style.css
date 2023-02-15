@@ -37,6 +37,7 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -1076,7 +1077,7 @@ justify-content: space-between;
   opacity: 0;
   will-change: visibility, opacity;
 }
-.showmenu .overlay{
+:where(.showmenu, .showmodal) .overlay{
   opacity: 1;
   visibility: inherit;
 }
@@ -1981,9 +1982,84 @@ input[type="range"]::-webkit-slider-thumb{
   font-size: 0.85em;
   margin-top: 0.5em;
 }
+/* Modal */
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 600px;
+  width: 90%;
+  height: max-content;
+  padding: 2em;
+  margin: auto;
+  text-align: center;
+  background-color: var(--light-bg-color);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform .2s, visibility .2s, opacity .2s;
+}
+.showmodal .modal{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s, visibility 1s, opacity 1s;
+}
+.modal .image{
+  position: relative;
+  height: calc(150px + 10vw);
+  overflow: hidden;
+  max-height: 400px;
+  margin: -2em -2em 0 -2em;
+}
+.modal h2{
+  font-size: 1.75em;
+  text-transform: uppercase;
+  max-width: 300px;
+  margin: 0.5em auto;
+  line-height: 1;
+}
+.modal p{
+  margin-bottom: 1em;
+  color: var(--light-text-color);
+}
+.modal .t-close{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: var(--dark-color);
+}
+.modal .t-close:hover{
+  background-color: var(--white-color);
 
+}
+/* Modal------ */
 
-
+/* Back To Top */
+.backtotop{
+  position: fixed;
+  bottom: 6em;
+  right: 2em;
+  margin: 0;
+  font-size: .9em;
+  border-radius: 10px;
+  text-align: center;
+  gap: 0;
+  padding-block-end: 3px;
+  z-index: 999;
+  background-color: var(--light-text-color);
+  transition: var(--trans-color);
+  padding: 0 .8em;
+  display: none;
+}
+.backtotop:hover{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+/* Back To Top---- */
 
 /* Page Checkout------- */
 
