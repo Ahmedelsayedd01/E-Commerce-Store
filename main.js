@@ -107,7 +107,7 @@ for (let x = 0; x < stocks.length; x++) {
 }
 
 // Show cart on click
-const divtoShow = ".mini-cart";
+const divoShow = ".mini-cart";
 const divPopup = document.querySelector(".mini-cart");
 const divTrigger = document.querySelector(".cart-trigger");
 
