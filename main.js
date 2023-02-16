@@ -66,7 +66,6 @@ tClose.addEventListener("click", function () {
 const dptButton = document.querySelector(".dpt-cart .dpt-trigger"),
   dptClass = document.querySelector(".site");
 dptButton.addEventListener("click", function () {
-  console.log("Ahmed");
   dptClass.classList.toggle("showdpt");
 });
 
@@ -101,7 +100,7 @@ let stocks = document.querySelectorAll(".products .stock");
 for (let x = 0; x < stocks.length; x++) {
   let stock = stocks[x].dataset.stock,
     available = stocks[x].querySelector(".qty-available").innerHTML,
-    sold = stocks[x].querySelector(".qty-sold").innerHTML,
+    sold = stocks[x].querySelector(".qty-sold").innerHTML.valueOf,
     percent = (sold * 100) / stock;
   stocks[x].querySelector(".available").style.width = percent + "%";
 }
