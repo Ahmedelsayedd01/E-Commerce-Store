@@ -127,12 +127,12 @@ document.addEventListener("click", (e) => {
 });
 
 //Show Modal On Load
-// window.onload = function () {
-//   document.querySelector(".site").classList.toggle("showmodal");
-// };
-// document.querySelector(".modalclose").addEventListener("click", function () {
-//   document.querySelector(".site").classList.remove("showmodal");
-// });
+window.onload = function () {
+  document.querySelector(".site").classList.toggle("showmodal");
+};
+document.querySelector(".modalclose").addEventListener("click", function () {
+  document.querySelector(".site").classList.remove("showmodal");
+});
 
 // Back to top
 const backtotop = document.querySelector(".backtotop");
