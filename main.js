@@ -147,5 +147,5 @@ function checkHeight() {
 }
 
 backtotop.addEventListener("click", () => {
-  window.screenTop(0, 0);
+  window.scrollTo(0, 0);
 });
