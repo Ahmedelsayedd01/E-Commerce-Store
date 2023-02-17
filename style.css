@@ -1263,13 +1263,14 @@ h4 {
 .products .actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 2em;
 }
 .products .qty-control {
   width: fit-content;
   padding: 0.5em;
   border: 1px solid var(--border-color);
-  margin: 0 2em 2em 0;
+  margin: 2em 0.5em;
 }
 .products .actions :where(input, button) {
   font-size: 1.25em;
@@ -1285,6 +1286,8 @@ h4 {
 }
 .products .actions .button-cart {
   flex: 1;
+  display: flex;
+  align-items: center;
   min-width: 200px;
 }
 .products .actions .button-cart button {
