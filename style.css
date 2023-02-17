@@ -258,13 +258,13 @@ h4 {
   margin-right: 0.5em;
 }
 .logo a {
-  font-family: "Poppins";
-  font-size: 1.75em;
   position: relative;
-  font-weight: var(--fw8);
+}
+.logo a img {
   display: flex;
-  padding-left: 0.75em;
-  margin-right: 2em;
+  height: 78px;
+  padding: 0;
+  margin-right: 3em;
 }
 .circle {
   position: absolute;
@@ -453,9 +453,6 @@ form.search button:hover {
 .off-canvas .canvas-head .logo {
   z-index: 10;
   position: relative;
-}
-.off-canvas .canvas-head .logo .circle {
-  opacity: 0.75;
 }
 .t-close {
   font-size: 1.25em;
@@ -2049,10 +2046,12 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #c8dffe;
   transition: var(--trans-color);
   padding: 0.1em 0.6em;
+  display: none;
 }
 .backtotop:hover {
   background-color: var(--dark-color);
   color: var(--white-color);
+  cursor: pointer;
 }
 /* Back To Top---- */
 
