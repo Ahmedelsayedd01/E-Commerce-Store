@@ -957,11 +957,14 @@ h4 {
 
 /* Footer-Info */
 .footer-info {
-  padding: 3.5em 0 5em;
+  padding: 2.5em 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-info .wrapper .flexcol {
   align-items: center;
-  gap: 0;
+  gap: 1;
 }
 .footer-info ul li a {
   font-size: 1.25em;
@@ -978,8 +981,9 @@ h4 {
 .footer-info ul li a:hover {
   background-color: var(--border-color);
 }
-.footer-info .logo a {
-  margin: 0 0 1em -0.75em;
+
+.footer-info .flexcol .logo-footer a > img {
+  height: 78px;
 }
 .footer-info .mini-text {
   margin-top: 2em;
