@@ -747,9 +747,6 @@ form.search button:hover {
   background-position-y: top;
   background-repeat-y: no-repeat;
 }
-.products .item:where(:nth-child(3), :nth-child(3)) .stars {
-  width: 34px;
-}
 .products h3 {
   font-family: "Rubik";
   font-size: 1em;
