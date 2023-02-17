@@ -447,12 +447,25 @@ form.search button:hover {
   justify-content: space-between;
   padding: 1.5em;
   margin: -1.5em -1.5em -1.5em;
-  background-color: var(--secondary-dark-color);
+  background-color: #1dcebf;
   border-bottom-left-radius: 160px 25px;
 }
 .off-canvas .canvas-head .logo {
   z-index: 10;
   position: relative;
+}
+.off-canvas .canvas-head .t-close {
+  font-size: 2em;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--percent50);
+  color: var(--dark-color);
+  transition: var(--trans-background-color);
+}
+.off-canvas .canvas-head .t-close:hover {
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  overflow: 0.75;
 }
 .t-close {
   font-size: 1.25em;
